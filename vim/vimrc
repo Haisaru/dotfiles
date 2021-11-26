@@ -1,0 +1,42 @@
+call plug#begin()
+	
+	Plug 'scrooloose/nerdtree'
+	Plug 'lervag/vimtex'
+	Plug 'sirver/ultisnips'
+	
+call plug#end()
+
+let g:tex_flavor='latex'
+let g:vimtex_view_method='zathura'
+let g:vimtex_quickfix_mode=0
+set conceallevel=2
+let g:tex_conceal='abdmgs'
+	
+
+
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+
+"visuals
+
+set number
+syntax on
+
+"key mappings
+
+map <C-n> :NERDTreeToggle<CR>
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+"setlocal spell
+"set spelllang=en_gb
+"inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u    
+
+"set default clipboard to system clipboard
+set clipboard=unnamedplus
+
+
+set encoding=utf-8
