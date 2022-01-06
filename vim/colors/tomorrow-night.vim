@@ -1,5 +1,4 @@
-
-w Night - Full Colour and 256 Colour
+" Night - Full Colour and 256 Colour
 " http://chriskempson.com
 "
 " Hex colour conversion functions borrowed from the theme "Desert256""
