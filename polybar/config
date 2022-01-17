@@ -61,7 +61,6 @@ font-1 = monofur:fontformat=truetype:size=11;1
 
 modules-left = i3 xwindow
 modules-center = date 
-modules-right = musicinfo
 
 tray-position = right
 tray-padding = 9
@@ -103,34 +102,6 @@ label-urgent-foreground = ${colors.my_foreground}
 label-urgent-background = ${colors.my_background}
 label-urgent-underline = ${colors.my_color8}
 label-urgent-padding = 2
-
-[module/musicinfo]
-type = custom/script
-
-exec = ~/.config/polybar/music.sh
-interval = 5
-format = <label>
-label = %output:0:30:...%
-format-padding = 10
-format-foreground = ${colors.my_color2}
-
-[module/date]
-type = internal/date
-interval = 5
-
-date =
-date-alt = "%d/%m/%Y"
-
-time = "%a %b %d, %I:%M %p "
-
-time-alt = %H:%M
-
-format-prefix-foreground = ${colors.my_foreground}
-format-underline =
-
-
-label = %date% %time%
-
 
 [module/battery]
 type = internal/battery
