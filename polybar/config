@@ -103,6 +103,23 @@ label-urgent-background = ${colors.my_background}
 label-urgent-underline = ${colors.my_color8}
 label-urgent-padding = 2
 
+[module/date]
+type = internal/date
+interval = 5
+
+date =
+date-alt = "%d/%m/%Y"
+
+time = "%a %b %d, %I:%M %p "
+
+time-alt = %H:%M
+
+format-prefix-foreground = ${colors.my_foreground}
+format-underline =
+
+
+label = %date% %time%
+
 [module/battery]
 type = internal/battery
 battery = BAT1
