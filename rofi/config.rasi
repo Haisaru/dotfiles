@@ -1,3 +1,5 @@
+@theme "nord"
+
 configuration {
 /*	modi: "window,run,ssh";*/
 /*	font: "mono 12";*/
