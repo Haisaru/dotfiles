@@ -143,6 +143,8 @@ bindsym $mod+F9 scratchpad show
 bindsym $mod+Ctrl+Right workspace next
 bindsym $mod+Ctrl+Left workspace prev
 
+#add alttab behaviour
+bindsym $mod+Tab workspace back_and_forth
 # Workspace names
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
