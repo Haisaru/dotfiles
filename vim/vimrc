@@ -1,19 +1,9 @@
-
+"General Vim Settings
 " Don't try to be vi compatible
 set nocompatible
 
 " Helps force plugins to load correctly when it is turned back on below
 filetype off
-
-" Call plugins using vim-plugged
-call plug#begin()
-  
-  Plug 'scrooloose/nerdtree'
-  Plug 'lervag/vimtex'
-  Plug 'sirver/ultisnips'
-        
-call plug#end()
-
 
 " Turn on syntax highlighting
 syntax on
@@ -90,7 +80,6 @@ nnoremap <F1> :set invfullscreen<CR>
 vnoremap <F1> :set invfullscreen<CR>
 
 " Textmate holdouts
-
 " Formatting
 map <leader>q gqip
 
@@ -100,6 +89,7 @@ set listchars=tab:▸\ ,eol:¬
 " set list " To enable by default
 " Or use your leader key + l to toggle on/off
 map <leader>l :set list!<CR> " Toggle tabs and EOL
+
 
 " Color scheme (terminal)
 set t_Co=256
@@ -114,14 +104,22 @@ colorscheme tomorrow-night
 hi Normal ctermbg=none
 
 
-" Plugin config
+"Plugin Settings
+"Call plugins using vim-plugged
+call plug#begin()
+  
+  Plug 'scrooloose/nerdtree'
+  Plug 'lervag/vimtex'
+  Plug 'sirver/ultisnips'
+        
+call plug#end()
+
+"Plugin config
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
 set conceallevel=2
 let g:tex_conceal='abdmgs'
-  
-
 
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
