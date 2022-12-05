@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
+alias ls='ls -a --color=auto'
 PS1='[\u@\h \W]\$ '
 
 
@@ -19,3 +19,10 @@ export LESS_TERMCAP_me=$'\e[0m'        # reset bold/blink
 export LESS_TERMCAP_se=$'\e[0m'        # reset reverse video
 export LESS_TERMCAP_ue=$'\e[0m'        # reset underline
 export GROFF_NO_SGR=1                  # for konsole and gnome-terminal
+
+export PATH=$PATH:~/.local/bin
+
+export VISUAL=nvim
+
+alias vim=nvim
+alias vi=nvim
