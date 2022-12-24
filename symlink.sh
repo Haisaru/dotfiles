@@ -37,7 +37,7 @@ ln -sf $dotfiles_dir/xinitrc ~/.xinitrc
 ln -sf $dotfiles_dir/alacritty ~/.config/alacritty
 ln -sf $dotfiles_dir/clangd ~/.config/clangd
 ln -sf $dotfiles_dir/lightdm ~/.config/lightdm
-ln -sf $dotfiles_dir/picom.conf ~/.config/picom.conf
+ln -sf $dotfiles_dir/picom/picom.conf ~/.config/picom.conf
 ln -sf $dotfiles_dir/rofi ~/.config/rofi
 ln -sf $dotfiles_dir/ranger ~/.config/ranger
 ln -sf $dotfiles_dir/zathura ~/.config/zathura
