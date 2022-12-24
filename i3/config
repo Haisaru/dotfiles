@@ -8,7 +8,7 @@
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
-set $Locker betterlockscreen -l
+set $Locker dm-tool lock
 
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
