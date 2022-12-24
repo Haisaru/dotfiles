@@ -1,6 +1,0 @@
-{
-    "workbench.colorTheme": "Abyss",
-    "vim.vimrc.enable": true,
-    "security.workspace.trust.untrustedFiles": "open",
-    "workbench.activityBar.visible": false
-}
