@@ -25,6 +25,7 @@ sudo rm -rf ~/.config/ranger > /dev/null 2>&1
 sudo rm -rf ~/.config/picom.conf > /dev/null 2>&1
 sudo rm -rf ~/.config/rofi > /dev/null 2>&1
 sudo rm -rf ~/.config/zathura > /dev/null 2>&1
+sudo rm -rf ~/.config/polybar > /dev/null 2>&1
 
 #==============
 # Create symlinks in the home folder
@@ -41,6 +42,7 @@ ln -sf $dotfiles_dir/picom/picom.conf ~/.config/picom.conf
 ln -sf $dotfiles_dir/rofi ~/.config/rofi
 ln -sf $dotfiles_dir/ranger ~/.config/ranger
 ln -sf $dotfiles_dir/zathura ~/.config/zathura
+ln -sf $dotfiles_dir/polybar ~/.config/polybar
 
 #==============
 #if [ -n "$(find $dotfiles_dir/custom-configs -name gitconfig)" ]; then
