@@ -1,9 +1,12 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-THEME="lofi"
+# Terminate already running bar instances
+killall -q polybar
 
-killall polybar
+# Wait until the processes have been shut down
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
-CONFIG_DIR=$(dirname $0)/themes/$THEME/config.ini
-polybar main -c $CONFIG_DIR &
+# Launch Polybar, using default config location ~/.config/polybar/config
+polybar main &
+
+echo "Polybar launched..."

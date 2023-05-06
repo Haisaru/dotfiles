@@ -326,7 +326,7 @@ set_from_resource	$color14	color14
 set_from_resource	$color15	color15
 
 # Polybar launch script (located ~/.config/polybar/launch.sh) 
-exec_always --no-startup-id $HOME/dotfiles/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 
 # hide/unhide i3status bar
