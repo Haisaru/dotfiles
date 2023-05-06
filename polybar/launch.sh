@@ -1,14 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Basic script to kill all old bars and launch new.
+THEME="lofi"
 
-# Terminate already running bad instances
-killall -q polybar
+killall polybar
+while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
-# Wait until the processes have been shut down
-#while grep -x polybar >/dev/null; do sleep 1; done
- 
-polybar 2>&1 | tee -a /tmp/polybar.log & disown
-# Launch the example bar
-echo "Polybar Launched"
-
+CONFIG_DIR=$(dirname $0)/themes/$THEME/config.ini
+polybar main -c $CONFIG_DIR &
