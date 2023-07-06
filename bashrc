@@ -5,7 +5,6 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
 
@@ -21,9 +20,12 @@ export LESS_TERMCAP_ue=$'\e[0m'        # reset underline
 export GROFF_NO_SGR=1                  # for konsole and gnome-terminal
 
 export PATH=$PATH:~/.local/bin
+export PATH=$PATH:~/.cargo/bin
 
 export VISUAL=nvim
 
 alias vim=nvim
 alias vi=nvim
 alias cat=bat
+alias ls='ls --color=auto'
+alias pomotroid='pomotroid --disable-gpu-sandbox'
